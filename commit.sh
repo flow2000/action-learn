@@ -15,6 +15,7 @@ else
   echo '意大利(it-IT)时间：'$(TZ=UTC-2 date +%Y-%m-%d" "%H:%M:%S) >> time.txt
   echo '日本(ja-JP)时间：'$(TZ=UTC-9 date +%Y-%m-%d" "%H:%M:%S) >> time.txt
   echo '中国(zh-CN)时间：'$(TZ=UTC-8 date +%Y-%m-%d" "%H:%M:%S) >> time.txt
+  cat time.txt
   git config --local user.email "1982989137@qq.com"
   git config --local user.name "flow2000"
   git pull origin master
